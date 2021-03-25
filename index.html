@@ -1,54 +1,40 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="calcultator" content="width=device-width" />
-		<title>calcultator</title>
-		<link href="style.css" rel="stylesheet" type="text/css" />
-	</head>
-	<body>
-		<main id="calc">
-			<div id="container">
-				<div id="display"></div>
-				<button type="button" class="clear" value="clear" data-key="8"
-					>AC</button
-				>
-				<button type="button" class="sign" value="sign" data-key="192"
-					>+/-</button
-				>
-				<button type="button" class="percent" value="percent" data-key="80"
-					>%</button
-				>
-				<button type="button" class="operator" value="/" data-key="68"
-					>/</button
-				>
-				<button type="button" class="operand" value="7" data-key="55">7</button>
-				<button type="button" class="operand" value="8" data-key="56">8</button>
-				<button type="button" class="operand" value="9" data-key="57">9</button>
-				<button type="button" class="operator" value="*" data-key="88"
-					>*</button
-				>
-				<button type="button" class="operand" value="4" data-key="52">4</button>
-				<button type="button" class="operand" value="5" data-key="53">5</button>
-				<button type="button" class="operand" value="6" data-key="54">6</button>
-				<button type="button" class="operator" value="-" data-key="173"
-					>-</button
-				>
-				<button type="button" class="operand" value="1" data-key="49">1</button>
-				<button type="button" class="operand" value="2" data-key="50">2</button>
-				<button type="button" class="operand" value="3" data-key="51">3</button>
-				<button type="button" class="operator" value="+" data-key="61"
-					>+</button
-				>
-				<button type="button" id="zero" class="operand" value="0" data-key="48"
-					>0</button
-				>
-				<button type="button" class="decimal" value="." data-key="190"
-					>.</button
-				>
-				<button type="button" class="equals" value="=" data-key="69">=</button>
-			</div>
-		</main>
-		<script src="script.js"></script>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="calcultator" content="width=device-width" />
+    <title>calcultator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="./favicon/icone.svg.png" />
+  </head>
+  <body>
+    <main class="calc">
+      <div class="container">
+        <div class="screen"></div>
+        <div class="grid-button">
+          <button class="clear"></button>
+
+          <button class="÷">÷</button>
+          <button class="9">9</button>
+          <button class="8">8</button>
+          <button class="7">7</button>
+
+          <button class="x">x</button>
+          <button class="6">6</button>
+          <button class="5">5</button>
+          <button class="4">4</button>
+
+          <button class="-">-</button>
+          <button class="3">3</button>
+          <button class="2">2</button>
+          <button class="1">1</button>
+
+          <button class="+">+</button>
+          <button class="=">=</button>
+          <button class="0">0</button>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

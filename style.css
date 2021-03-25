@@ -1,118 +1,31 @@
 :root {
-	--operator: #ff8f1f;
-	--operator-focus: #ffc183;
-	--top-operator: #1e90ff;
-	--top-operator-active: #72aae2;
-	--operand: #217c7e;
-	--operand-active: #33b9bb;
+  --operator: #ff8f1f;
+  --operator-focus: #ffc183;
+  --top-operator: #1e90ff;
+  --top-operator-active: #72aae2;
+  --operand: #217c7e;
+  --operand-active: #33b9bb;
+  --container: #aaa;
+  --border: #333;
 }
 
-html {
-	text-align: center;
-	font-family: monospace;
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#calc {
-	display: flex;
-	min-height: 95vh;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-	height: 100vh;
-	overflow: hidden;
-	background-color: azure;
+.container {
+  max-width: 400px;
+  border: 2px var(--border) solid;
+  border-radius: 15px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--container);
 }
 
-#container {
-	background-color: black;
-	border: 10px solid rgba(47, 47, 47, 1);
-	border-radius: 4px;
-	display: grid;
-	grid-template-columns: repeat(4, 100px);
-	grid-template-rows: minmax(100px, auto) repeat(5, 80px);
-	gap: 2px;
-}
-
-#display {
-	grid-column: 1 / -1;
-	background-color: #b2b9b7;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: flex-end;
-	padding: 5px;
-	font-size: 5.5em;
-	font-weight: initial;
-	text-shadow: 1.3px 1.3px #383838;
-	margin: 5px;
-}
-
-button {
-	margin: 1px;
-	border-radius: 5%;
-	border: none;
-	font-weight: initial;
-	font-size: 2em;
-	font-family: monospace;
-	color: black;
-}
-
-#zero {
-	grid-column: span 2;
-}
-
-.operator {
-	background-color: var(--operator);
-}
-
-.operator:focus {
-	background-color: var(--operator-focus);
-}
-
-.equals {
-	background-color: var(--operator);
-}
-
-.equals:active {
-	background-color: var(--operator-focus);
-}
-
-.operand {
-	background-color: var(--operand);
-}
-
-.operand:active {
-	background-color: var(--operand-active);
-}
-
-.decimal {
-	background-color: var(--operand);
-}
-
-.decimal:active {
-	background-color: var(--operand-active);
-}
-
-.clear {
-	background-color: var(--top-operator);
-}
-
-.clear:active {
-	background-color: var(--top-operator-active);
-}
-
-.sign {
-	background-color: var(--top-operator);
-}
-
-.sign:active {
-	background-color: var(--top-operator-active);
-}
-
-.percent {
-	background-color: var(--top-operator);
-}
-
-.percent:active {
-	background-color: var(--top-operator-active);
+.grid-button {
+  display: grid;
+  grid-template-columns: (4, 1fr);
 }
